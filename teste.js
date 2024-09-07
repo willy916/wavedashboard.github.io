@@ -174,5 +174,24 @@ new Chart(ctx2, {
 
 
 
+var voirmp=document.querySelector('.voirmp')
+var pasvoirmp=document.querySelector('.pasvoirmp')
+var montantvisi=document.querySelector('.montantvisi')
+var montantpasvisi=document.querySelector('.montantpasvisi')
 
+voirmp.addEventListener('click',function(){
+  voirmp.classList.add("invisible")
+  pasvoirmp.classList.remove("invisible")
+
+  montantvisi.classList.add("invisible")
+  montantpasvisi.classList.remove("invisible")
+})
+
+pasvoirmp.addEventListener('click',function(){
+  pasvoirmp.classList.add("invisible")
+  voirmp.classList.remove("invisible")
+
+  montantvisi.classList.remove("invisible")
+  montantpasvisi.classList.add("invisible")
+})
 
