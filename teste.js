@@ -195,3 +195,111 @@ pasvoirmp.addEventListener('click',function(){
   montantpasvisi.classList.add("invisible")
 })
 
+
+
+
+
+/**popup */
+
+
+var chifstat=document.querySelector('.chifstat')
+
+
+chifstat.addEventListener('click',function(){
+
+
+  Swal.fire({
+    title: "Statistique des Dépôts",
+    html:`<canvas id="chart-bars3" class="chart-canvas" height="170"></canvas>`,
+    showClass: {
+      popup: `
+        animate__animated
+        animate__fadeInUp
+        animate__faster
+      `
+    },
+    hideClass: {
+      popup: `
+        animate__animated
+        animate__fadeOutDown
+        animate__faster
+      `
+    }
+  });
+
+
+
+
+
+
+
+var ctx3 = document.getElementById("chart-bars3").getContext("2d");
+  
+new Chart(ctx3,{
+  type: "bar",
+  data: {
+    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    datasets: [{
+      label: "Dépôts",
+      tension: 0.4,
+      borderWidth: 0,
+      borderRadius: 4,
+      borderSkipped: false,
+      backgroundColor: "#5E8BFF",
+      data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+      maxBarThickness: 6
+    }, ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false,
+      }
+    },
+    interaction: {
+      intersect: false,
+      mode: 'index',
+    },
+    scales: {
+      y: {
+        grid: {
+          drawBorder: false,
+          display: false,
+          drawOnChartArea: false,
+          drawTicks: false,
+        },
+        ticks: {
+          suggestedMin: 0,
+          suggestedMax: 500,
+          beginAtZero: true,
+          padding: 15,
+          font: {
+            size: 14,
+            family: "sans-serif",
+            style: 'normal',
+            lineHeight: 2
+          },
+          color: "#5E8BFF"
+        },
+      },
+      x: {
+        grid: {
+          drawBorder: false,
+          display: false,
+          drawOnChartArea: false,
+          drawTicks: false
+        },
+        ticks: {
+          display: false
+        },
+      },
+    },
+  },
+});
+
+
+})
+
+

@@ -871,7 +871,8 @@ margin: 5px;
         margin:2px;
         display:flex;
         justify-content:center;
-        align-items:center
+        align-items:center;
+        cursor:pointer
     }
 
     .notif2:nth-child(1) i{
@@ -1016,6 +1017,7 @@ margin: 5px;
     margin-left:5px;
     font-size:18px;
     color: aliceblue;
+    cursor:pointer
     }
 
     .chiffre .qrcode{
