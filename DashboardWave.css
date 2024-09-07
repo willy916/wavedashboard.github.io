@@ -1241,7 +1241,7 @@ margin: 5px;
     }
 
     .bouton:nth-child(2){
-        background-color:#f7ff5e;
+        background-color:#5E8BFF;
         color:#ffffff
     }
 
@@ -1261,7 +1261,7 @@ margin: 5px;
 
 
     body{
-        background-color: white;
+        background-color: white!important;
     }
     
     
