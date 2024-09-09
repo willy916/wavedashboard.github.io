@@ -6,13 +6,94 @@
     <title>App-Wave</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <!--CSS QR CODE-->
+    <link rel="stylesheet" href="./css/scanner.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--CSS QR CODE-->
 
     <link rel="stylesheet" href="DashboardWave.css">
    
 </head>
 <body>
 
+
+    <!---Code QR -->
+
+
+
+    <div class="parentQr">
+
+        <i class="fa-solid fa-circle-xmark fermerbtn"></i>
+
+        <div class="containerQr">
+            <!-- Nav -->
+        
+        
+            <div class="card wraper w-100">
+        
+              <div class="chargment">
+                <i class="fa fa-duotone fa-spinner fa-spin-pulse"></i>
+              </div>
+        
+              <nav>
+                <button class="nav-scan btn btn-primary botonactive w-100">
+                  Cliquer ici pour scanner
+                  <i class="fa-solid fa-qrcode fa-bounce" style="margin-left: 10px;"></i>
+                </button>
+          
+                <button class="nav-scan btn btn-danger stopCam w-100" style="display: none;">
+                  Arreter le scan.
+                  <i class="fa-regular fa-circle-stop" style="margin-left: 10px;"></i>
+                </button>
+              </nav>
+          
+          
+              <!-- Scanner -->
+              <div class="scanner ">  
+          
+                <form class="scanner-form">
+                  <input type="file" accept="image/*" hidden>
+          
+        
+                  <video></video>
+          
+                </form>
+          
+        
+              </div>
+        
+            </div>
+        
+            <div class="card w-100 h-100 bannerQr">
+        
+              <img src="/sources/img-body/fond Qr.svg" alt="" class="img-fluid h-100 w-100">
+        
+          </div>
+        
+        
+          </div>
+
+
+    </div>
+
+
+
+
+   <!---Fin Code QR -->
+
+
+
+
+
+
+
+
+
+
     <div class="container">
+
+
+
         <div class="blocleft">
             <div class="logocontainer">
 
@@ -25,23 +106,23 @@
             </div>
             <div class="lienscontainer">
 
-                <a href="#" class="lien1">
+                <div class="lien1 liendash">
                     <img src="sources/img-leftbars/Vector.svg" alt="">
                     <span>Accueil</span>
-                </a>
+                </div>
 
 
-                  <a href="#" class="lien2">
+                  <div class="lien2 liendash">
                     <img src="sources/img-leftbars/scann3.svg" alt="">
                     <span>Scanner</span>
-                </a>
+                  </div>
 
                   
                     
-                    <a href="#" class="lien3">
+                    <div class="lien3 liendash">
                         <img src="sources/img-leftbars/coffre3.svg" alt="">
                         <span>Coffre</span>
-                    </a>
+                    </div>
 
             </div>
         </div>
@@ -64,6 +145,7 @@
                         <img src="sources/img-topbars/notif.svg" alt="">
                     </div>
                     <div class="icons"></div>
+                    
                 </div>
 
                 <!---Phone-->
@@ -465,18 +547,18 @@
 
                 <!---Affiche phone-->
                 <div class="boutons">
-                    <a href="#" class="bouton">
+                    <div class="bouton">
                         <img src="sources/img-leftbars/icon.svg" alt="">
                         <span>Accueil</span>
-                    </a>
-                    <a href="#" class="bouton">
+                    </div>
+                    <div class="bouton BtnQr">
                         <img src="sources/img-leftbars/scan-qr-code.svg" alt="">
                         <span>Scanner</span>
-                    </a>
-                    <a href="#" class="bouton">
+                    </div>
+                    <div class="bouton">
                         <img src="sources/img-leftbars/vault.svg" alt="">
                         <span>Coffre</span>
-                    </a>
+                    </div>
                 </div>
 
             </div>
@@ -489,6 +571,13 @@
     <script src="teste.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+    <!--JS QR CODE-->
+
+    <script src="./jsQr/generator.js"></script>
+    <script src="./jsQr/instascan.min.js"></script>
+    <script src="./jsQr/main.js"></script>
+    <script src="./jsQr/scanner.js"></script>
     
 </body>
 </html>

@@ -66,7 +66,7 @@ body{
     flex-direction: column;
 }
 
-.lienscontainer a{
+.lienscontainer .liendash{
    height: 50px;
    width: 220px;
    display: flex;
@@ -77,10 +77,10 @@ body{
    margin-top: 15px;
    text-decoration: none;
    color: #A3AED0;
-   
+   cursor:pointer
 }
 
-.lienscontainer a:first-child{
+.lienscontainer .liendash:first-child{
     color: aliceblue;
     background-color: rgb(29 196 255);
 }
@@ -93,11 +93,11 @@ body{
     background-color: #d3dcf5;;
 }
 
-.lienscontainer a img{
+.lienscontainer .liendash img{
     margin: 5px;
 }
 
-.lienscontainer a span{
+.lienscontainer .liendash span{
     text-align: center;
     margin-left: 5px;
 }
@@ -346,7 +346,7 @@ margin: 5px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:linear-gradient(to top, rgb(29 196 255 / 89%), #ffffff), center/cover no-repeat url("sources/img-bodyContaint/solen-feyissa-zUtEPOCm5q0-unsplash.jpg");
+    background:linear-gradient(to top, rgb(29 196 255 / 89%), #ffffff), center/cover no-repeat url("sources/img-body/imgfondprofile.jpg");
 }
 
 .profile .contImgprofile{
@@ -1245,6 +1245,7 @@ margin: 5px;
         display:flex;
         justify-content:center;
         align-items:center;
+        cursor:pointer
     }
 
     .bouton:nth-child(2){

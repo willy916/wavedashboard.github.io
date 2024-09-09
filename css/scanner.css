@@ -1,0 +1,261 @@
+
+
+.parentQr{
+    height: 100%!important;
+    width: 100%;
+    background-color: #15151594;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width:100%!important;
+    z-index:5;
+    flex-direction:column
+}
+
+.fermerbtn{
+    background-color: #ffffff;
+    margin-left:50px;
+    border-radius:50px;
+    font-size:30px;
+    margin-left:430px;
+  color:#ff000f;
+  cursor:pointer
+}
+
+.containerQr{
+  width: 100%!important;
+  max-width: 410px!important;
+  border-radius: 7px!important;
+  padding: 15px 25px!important;
+  overflow: hidden!important;
+  box-shadow: 0 0 10px #fff!important;
+  background-color:aliceblue;
+  
+}
+
+button{
+  outline: none!important;
+  cursor: pointer!important;
+}
+
+/* Nav */
+nav{
+  display: flex!important;
+  justify-content: space-between!important;
+  align-items: center!important;
+  /* margin-bottom: 20px!important; */
+}
+
+nav button{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 45px!important;
+  border-bottom: 2px solid #ccc!important;
+  width:100%;
+  background:#4496de;
+  border:none;
+  color:aliceblue
+  
+}
+
+nav button.active{
+  border-bottom: 2px solid #0283d8!important;
+  font-weight: 700!important;
+  color: #ffffff!important;
+  opacity: 1!important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scanner{
+    opacity: 0!important;
+    overflow: hidden;
+    height:0px!important;
+    transition: height 0.5s ease;
+    
+  }
+
+
+  
+  .scanner h1{
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  
+  .scanner h1 i{
+    font-size: x-large;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .scanner h1 .fa-camera{
+    color: #0283d8;
+  }
+  
+  .scanner h1 .fa-circle-stop{
+    color: crimson;
+    display: none;
+  }
+  
+  .scanner-form{
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px dashed #777;
+  
+  }
+  
+  .scanner-form img{
+    max-width: 180px;
+    display: none;
+  }
+  
+  .scanner-form video{
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .scanner-form .content{
+    color: #0283d8;
+  }
+  
+  .scanner-form .content i{
+    font-size: 4rem;
+  }
+  
+  .scanner-form .content p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  
+  .scanner-details{
+    margin-top: 15px;
+  }
+  
+  .scanner-details textarea{
+    color: #333;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+  }
+  
+  .scanner-details .btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .scanner-details .btn button{
+    height: 50px;
+    width: calc(100% / 2 - 10px);
+    background: #237eb6;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+  
+  /* Active Scanner */
+  .scanner.active{
+    height: 225px!important;
+    opacity: 1!important
+   
+  }
+  
+  .scanner.active .scanner-form{
+    pointer-events: none;
+  }
+  
+  /* Active Iamge */
+  .scanner-form.active-img img{
+    display: block;
+  }
+  
+  .scanner-form.active-img .content,
+  .scanner-form.active-img video{
+    display: none;
+  }
+  
+  /* Active Video */
+  .scanner-form.active-video video{
+    display: block;
+  }
+  
+  .scanner-form.active-video .content,
+  .scanner-form.active-video img{
+    display: none;
+    transition: display 0.5s ease;
+  }
+  
+  .pointerEvents{
+    pointer-events: none;
+  }
+  
+
+  /**chargement*/
+
+  .chargment{
+    height:100%;
+    width: 100%;
+    background-color: #d9d9d9b0;
+    display: none;
+    justify-content:center;
+    align-items:center;
+    
+  }
+
+  
+.chargment i{
+  font-size:25px;
+  color:#00338b
+}
+
+
+.bannerQr{
+  height: 100%!important;
+  width: 100%!important;
+  transition: width 0.5s ease;
+}
+
+.bannerQr.reduire{
+height: 0%!important;
+width: 0%!important;
+  
+}
