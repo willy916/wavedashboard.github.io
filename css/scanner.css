@@ -30,7 +30,7 @@ padding: 15px 25px!important;
 overflow: hidden!important;
 box-shadow: 0 0 10px #fff!important;
 background-color:aliceblue;
-height:300px
+font-size:25px
 }
 
 button{
@@ -53,14 +53,14 @@ align-items:center;
 height: 45px!important;
 border-bottom: 2px solid #ccc!important;
 width:100%;
-background:#4496de;
+background:#dc3741;
 border:none;
-color:aliceblue
+color:aliceblue;
+  font-size:17px
 
 }
 
 nav button.active{
-border-bottom: 2px solid #0283d8!important;
 font-weight: 700!important;
 color: #ffffff!important;
 opacity: 1!important;
